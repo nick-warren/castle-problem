@@ -1,0 +1,37 @@
+ 1) Anderson was at the same bastion every day of the week.
+ 2) Price was at Buren every weekday.
+ 3) Ingles was at Leerdam six times.
+ 4) Ford was at Oranje the first four days of the week.
+ 5) Carter was at Nassau four times but not on Tuesday.
+ 6) Ross was never posted to Oranje.
+ 7) On Sunday Ross, Green and Dawson were at Leerdam.
+ 8) On Sunday Edwards was at Oranje.
+ 9) On Monday Ingles, Wilson and Ross were together.
+10) On Monday Thompson, Edwards and Harris were together. ==> This was at Nassau ==> Edwards and Harris not @ Nassau on Sat (R13)
+11) On Friday Ford and Morris were together in one section.
+12) On Friday Dawson and Harris were together in one section.
+13) On Saturday Thompson was at Nassau.
+14) Thompson and Carter were together at Buren.
+15) Harris and Ross were together at Buren.
+16) Jones was not at Buren on Monday.
+
+
+Thompson and Carter were together @ Buren
+
+Carter was at Nassau four times not Tuesday (R5)
+
+Harris and Ross were together @ Buren  ... could not have been Sunday since Ross was at Leerdam (R7)
+													... could not have been Monday since Ingles, Wilson and Ross were together (R9)
+													... could not have been Monday since Thompson, Edwards and Harris were together (R10)
+We need a Price, Harris and Ross @ Buren on tue,w,thu,sat (Cannot be Friday since R12)
+
+Price was at Buren every weekday [twtfs]
+We need a Price, Thompson Carter @ Buren on sun,t,w,t,f (Cannot be saturday since Thompson was at Nassau (R13))
+
+Ross and Ford cannot have been posted together at Oranje (R6 + 
+
+
+Anderson and Price must have been together on Sunday (R1, R2)
+Anderson could not have been at Leerdam (R7)
+This must include Ingles since he was at Leerdam for the remainder (see R8 derived)
+It could not have been Oranje since Edwards was posted there (R8)
