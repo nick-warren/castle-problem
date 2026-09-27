@@ -235,7 +235,7 @@ int main(int argc, char **argv)
    srand((unsigned int)time(&seed));
 
 	// Create an initial population of SAMPLE_SIZE
-   for (register int xx = 0; xx < SAMPLE_SIZE; xx++)
+   for (int xx = 0; xx < SAMPLE_SIZE; xx++)
    {
       myposting[xx].Initialize();
       myposting[xx].EvaluateFitness(FITNESS_FACTOR);
@@ -394,7 +394,7 @@ int Postings::Experiment()
 	memcpy(lineararray, postingarray, sizeof(temp_postingarray));
 
 	printf("Array: ");
-	for (register int xx=0; xx <= 104; xx++)
+	for (int xx=0; xx <= 104; xx++)
 	{
 		printf("%i\t", lineararray[xx]);
 		if (!((xx+1) % 3)) printf("\n");
@@ -839,9 +839,9 @@ void Postings::SortRemainingGuards(void)
 
     // Sort the remaining guards and the corresponding fixarray()
 
-	for (register int day = SUNDAY; day <= SATURDAY; day++)
+	for (int day = SUNDAY; day <= SATURDAY; day++)
     {
-        for (register int bastion = CATZENELLENBOGEN; bastion <= NASSAU; bastion++)
+        for (int bastion = CATZENELLENBOGEN; bastion <= NASSAU; bastion++)
         {
 
             if (postingarray[day][bastion][0] > postingarray[day][bastion][2])
@@ -888,7 +888,7 @@ void Postings::SortRemainingGuards(void)
 
 void Postings::Reset(void)
 {
-   register int guard, bastion, day;
+   int guard, bastion, day;
 
    for (day = SUNDAY; day <= SATURDAY; day++)
       for (bastion = CATZENELLENBOGEN; bastion <= NASSAU; bastion++)
@@ -906,14 +906,14 @@ void Postings::Reset(void)
 void Postings::EvaluateDoubles(void)
 {
 
-   register int bastion, day;
+   int bastion, day;
    const int A = 0;
    const int B = 1;
    const int C = 2;
 
    // Initialise the array
-   for (register int x = ANDERSON; x <= WILSON; x++)
-      for (register int y = ANDERSON; y <= WILSON; y++)
+   for (int x = ANDERSON; x <= WILSON; x++)
+      for (int y = ANDERSON; y <= WILSON; y++)
       	// No guard on the x-axis has been assigned to the one on the y-axis.
          doublearray[x][y] = 0;
 
@@ -963,9 +963,9 @@ int Postings::EvaluatePostingError(void)
    int SQUARES_CONSTANT = 0;  // Has been 3 in the past until April 2020
 
 	int total = 0;
-   for (register int x = ANDERSON; x <= WILSON; x++)
+   for (int x = ANDERSON; x <= WILSON; x++)
    {
-      for (register int y = ANDERSON; y <= WILSON; y++)
+      for (int y = ANDERSON; y <= WILSON; y++)
       {
          if (doublearray[x][y] > 1)
             total += ( (doublearray[x][y] + SQUARES_CONSTANT) * (doublearray[x][y] + SQUARES_CONSTANT)); // Sum of squares. (x + 1)^2
@@ -1063,13 +1063,13 @@ void Postings::CrossoverByUnFixed(Postings X, Postings Y)
    // 3. Crossover as per a normal string
    // 4. Put them back in the correct slots (those that are not fixed)
 
-   for (register int counter = 0; counter <= 104;counter++)
+   for (int counter = 0; counter <= 104;counter++)
    {
        temparrayX[counter] = 0;
        temparrayY[counter] = 0;
    }
 
-   for (register int counter = 0; counter <= 104;counter++)
+   for (int counter = 0; counter <= 104;counter++)
    {
 /*       if (X.fixedarray[counter] == TRUE)
        {
@@ -1222,7 +1222,7 @@ int  Postings::EvalRule01_AndersonWasAtSameBastionEveryWeekday(void)
    int bastionarray[5] = {0, 0, 0, 0, 0};		// How many times each bastion was visited.
    int totalnumberofbastions = 0;
 
-   for (register int day = MONDAY; day <= SATURDAY; day++)
+   for (int day = MONDAY; day <= SATURDAY; day++)
    {
    	for (int bastion = CATZENELLENBOGEN; bastion <= NASSAU; bastion++)
       {
@@ -1513,7 +1513,7 @@ int  Postings::MondayThompsonEdwardsHarrisTogether(void)
 
 int  Postings::FridayFordMorrisTogether(void)
 {
-	register int bastion = 0;					// This used to be part of the for loop, resulting in a possible scope loss in the 'if' statement. [NJW] 30 June 2015
+	int bastion = 0;					// This used to be part of the for loop, resulting in a possible scope loss in the 'if' statement. [NJW] 30 June 2015
 
 	for (bastion = CATZENELLENBOGEN; bastion <= NASSAU; bastion++)
 	{
@@ -1537,7 +1537,7 @@ int  Postings::FridayFordMorrisTogether(void)
 
 int Postings::FridayDawsonHarrisTogether(void)
 {
-	register int bastion = 0;					// This used to be part of the for loop, resulting in a possible scope loss in the 'if' statement. [NJW] 30 June 2015
+	int bastion = 0;					// This used to be part of the for loop, resulting in a possible scope loss in the 'if' statement. [NJW] 30 June 2015
 
 	for (bastion = CATZENELLENBOGEN; bastion <= NASSAU; bastion++)
 	{
@@ -1761,7 +1761,7 @@ void Postings::SetFordWasAtOranjeFirstFourDaysOfWeek(void)
 // Rule 2
 void Postings::SetPriceWasAtBurenEveryWeekday(void)
 {
-   for (register int day = MONDAY; day <= SATURDAY; day++)
+   for (int day = MONDAY; day <= SATURDAY; day++)
    {
       if (addGuardOnDayAndBastion(day, BUREN, PRICE, TRUE))
       {}
@@ -1779,7 +1779,7 @@ void Postings::SetInglesWasAtLeerdamSixTimes(void)
 	// This is rule 7
 	// Therefore Ingles must have been at Leerdam MONDAY ... SATURDAY
 
-	for (register int day = MONDAY; day <= SATURDAY; day++)
+	for (int day = MONDAY; day <= SATURDAY; day++)
 	{
 		if (!addGuardOnDayAndBastion(day, LEERDAM, INGLES, TRUE))
 			printf("Error allocating SetInglesWasAtLeerdamSixTimes\n");
@@ -1795,7 +1795,7 @@ void Postings::SetCarterAtNassauFourTimesNotTuesday(void)
 	int weekarray[7] = {0, 0, 1, 0, 0, 0, 0};			// Tuesday is blocked out
 	int day;
 
-	for (register int counter = 1; counter <= 4; counter++)
+	for (int counter = 1; counter <= 4; counter++)
 	{
 		while (weekarray[day = (rand() % 7)] != 0);
 		weekarray[day] = 1;
@@ -1865,7 +1865,7 @@ int Postings::DerivedRule01(void)
 	// This leaves Buren, Catz or Nassau for
 	// Anderson, Ingles, Price (in that sort order).
 
-	for (register int counter = 0; counter <= 2; counter++)
+	for (int counter = 0; counter <= 2; counter++)
 	{
 		if (counter == 0)
 			{bastion = BUREN; factor = 1;}
