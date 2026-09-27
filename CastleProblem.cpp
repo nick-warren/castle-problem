@@ -107,33 +107,33 @@ public:
 
     // *** Evaluation Rulebase.
     int  EvalRule01_AndersonWasAtSameBastionEveryWeekday();					// Rule  1
-    int  PriceWasAtBurenEveryWeekday();								// Rule  2
-    int  InglesWasAtLeerdamSixTimes();								// Rule  3
-    int  FordWasAtOranjeFirstFourDaysOfWeek();					    // Rule  4
-    int  CarterAtNassauFourTimesNotTuesday();						// Rule  5
-    int  RossNeverPostedToOranje();									// Rule  6
-    int  SundayRossGreenDawsonLeerdam();							// Rule  7
-    int  SundayEdwardsOranje();										// Rule  8
-    int  MondayInglesWilsonRossTogether();							// Rule  9
-    int  MondayThompsonEdwardsHarrisTogether();					    // Rule 10
-    int  FridayFordMorrisTogether();								// Rule 11
-    int  FridayDawsonHarrisTogether();								// Rule 12
-    int  SaturdayThompsonNassau();									// Rule 13
-    int  ThompsonAndCarterTogetherAtBuren();						// Rule 14
-    int  HarrisAndRossTogetherAtBuren();							// Rule 15
-    int  JonesNotAtBurenOnMonday();									// Rule 16
+    int  PriceWasAtBurenEveryWeekday();								         // Rule  2
+    int  InglesWasAtLeerdamSixTimes();								            // Rule  3
+    int  FordWasAtOranjeFirstFourDaysOfWeek();					            // Rule  4
+    int  CarterAtNassauFourTimesNotTuesday();					         	// Rule  5
+    int  RossNeverPostedToOranje();									            // Rule  6
+    int  SundayRossGreenDawsonLeerdam();							            // Rule  7
+    int  SundayEdwardsOranje();										            // Rule  8
+    int  MondayInglesWilsonRossTogether();							         // Rule  9
+    int  MondayThompsonEdwardsHarrisTogether();					            // Rule 10
+    int  FridayFordMorrisTogether();								            // Rule 11
+    int  FridayDawsonHarrisTogether();								            // Rule 12
+    int  SaturdayThompsonNassau();									            // Rule 13
+    int  ThompsonAndCarterTogetherAtBuren();						            // Rule 14
+    int  HarrisAndRossTogetherAtBuren();							            // Rule 15
+    int  JonesNotAtBurenOnMonday();									            // Rule 16
 
     // *** Setter Rulebase
-    void SetRule01_AndersonWasAtSameBastionEveryWeekday();				    // Rule  1
-    void SetPriceWasAtBurenEveryWeekday();							// Rule  2
-    void SetInglesWasAtLeerdamSixTimes();							// Rule  3
-    void SetFordWasAtOranjeFirstFourDaysOfWeek();				    // Rule  4
-    void SetCarterAtNassauFourTimesNotTuesday();					// Rule  5
-    void SetSundayRossGreenDawsonLeerdam();					    	// Rule  7
-    void SetSundayEdwardsOranje();									// Rule  8
-    void SetMondayInglesWilsonRossTogether();						// Rule  9
-    void SetMondayThompsonEdwardsHarrisTogether();			    	// Rule 10
-    void SetSaturdayThompsonNassau();								// Rule 13
+    void SetRule01_AndersonWasAtSameBastionEveryWeekday();				   // Rule  1
+    void SetPriceWasAtBurenEveryWeekday();							         // Rule  2
+    void SetInglesWasAtLeerdamSixTimes();							            // Rule  3
+    void SetFordWasAtOranjeFirstFourDaysOfWeek();        				   // Rule  4
+    void SetCarterAtNassauFourTimesNotTuesday();					         // Rule  5
+    void SetSundayRossGreenDawsonLeerdam();					    	         // Rule  7
+    void SetSundayEdwardsOranje();									            // Rule  8
+    void SetMondayInglesWilsonRossTogether();						         // Rule  9
+    void SetMondayThompsonEdwardsHarrisTogether();			    	         // Rule 10
+    void SetSaturdayThompsonNassau();								            // Rule 13
 
     // *** End of Rulebase.
 
